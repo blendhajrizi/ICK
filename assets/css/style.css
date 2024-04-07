@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --bg-black:#00000;
+
+}
+
+/* Desktop,Tablet and Mobile */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+ margin:0px auto;
+}
+
+.btn{
+    color: black;
+    text-decoration: inherit;
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 600;
+    order: 10;
+    font-family: "Product Sans", Sans-serif;
+    border:2px solid #ccc;
+    border-radius: 1px;
+}
+.bg-black{
+   background-color:rgba(0, 0, 0, 1);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        height: 50px;
+    }
+    .sb-lg{
+        width: 250px;
+    }
+    .sb-ls{
+        width: 150px;
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        li{
+            margin: 0 15px;
+            position: relative;
+          
+            ul{
+               
+                background-color:slategray ;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                position: absolute;
+                li{
+                    margin: 0px;
+                }
+                
+                a{
+                    padding: 13px 16px;
+                    display:block;
+
+                    &:hover{
+                        color:aliceblue;
+                        background-color: black;
+                    }
+                }
+            }
+
+            &:hover ul {
+                display: block;
+                
+            }
+        }
+
+        a {
+            color: #ccc;
+            font-family: "Poppins", Sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: capitalize;
+            font-style: normal;
+            text-decoration: none;
+            line-height: 1em;
+            letter-spacing: 0px;
+            word-spacing: 0em;
+
+            i{
+                display: inline-block;
+                margin-left: 5px;
+            }
+        }
+        
+       
+    }
+   .submenu{
+    display: none;
+   }
+}
+main{
+    .container{
+        display: flex;
+        flex-direction: column;
+
+        .intro{
+         color: aliceblue;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         
+          
+        
+         h1{
+            text-align: center;
+            color: #FFFFFF;
+    font-family: "Product Sans", Sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+         }
+         p{
+            text-align: center;
+            color: #CCCACC;
+            font-family: "Product Sans", Sans-serif;
+            font-size: 20px;
+            line-height: 34px;
+            letter-spacing: 0px;
+            margin-left: 100px;
+         }
+        }
+     
+         .image1{
+           
+            .imazhi{
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+
+            .titulli{
+                text-align: center;
+                color: aliceblue;
+            }
+         }
+        
+        
+    }
+   background-image:url('https://cdn.wallpapersafari.com/47/82/82OpaQ.jpg');
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px){}
+/*Tablet*/
+
+@media screen and(min-width: 768px){}
+
+/*Desktop*/
+@media screen and (min-width: 1200px){
+  .container{
+    width: 1200px;
+  }
+    main,
+   section,
+   footer
+   {
+    padding: 90px 0px;
+   }
+  
+}
